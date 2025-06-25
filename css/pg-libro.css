@@ -1,0 +1,511 @@
+/*variables*/
+:root{
+    --fondo:rgb(231, 239, 253); 
+    --menu:rgb(255, 255, 255);
+    --lt:#212121;
+ }
+/*HEADER DE INFORMACION*/
+
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    padding: .10px .5px;
+    z-index: 999;
+    color: #333;
+    }
+  
+.header p{
+font-size: 1.3rem;
+text-align: right;
+color: rgb(32, 31, 31);
+
+}
+.header .virtu{
+    background-color: rgb(146, 203, 241);
+    width: 100%;
+    height: 2.3rem;
+    text-align: center;
+    
+}
+.header .fisca{
+    background-color: rgb(255, 252, 197);
+    width: 100%;
+    height: 2.3rem;
+    text-align: center;
+}
+.header .chatr{
+    background-color:rgb(167, 167, 244);
+    width: 100%;
+    height: 2.3rem;
+    text-align: center;
+}
+
+/*menu*/
+
+
+/*menu*/
+
+.menu{
+    top: 6%;right: 0;left: 0;
+    background-color:var(--menu);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    padding: .10px .5px;
+    z-index: 999;
+    
+    }
+    
+    
+    .menu .logo{
+        display: flex;
+    align-items:center ;
+    }
+    .menu .logo img{
+        height: 3rem;
+        padding: 4px;
+    }
+    .menu .logo .tit{
+        color:var(--lt);
+        font-size: 1.3rem;
+       font-weight: bolder;
+    }
+    .icons h5{
+        font-size: 1rem;
+    }
+    .menu .navbar {
+        display: flex;
+    }
+    .menu .navbar  a{
+     font-size:1.2rem;
+     margin-right: 1.5rem;
+     color:var(--lt);
+     font-weight: bold;
+     display: flex;
+     text-decoration: none;
+    }
+    .menu .navbar a:hover{
+        border-bottom: .1rem solid rgb(0, 149, 255);
+        color: rgb(0, 38, 255);
+        padding-bottom: .4rem;
+    }
+    .menu .icons a img{
+        height: 3rem;
+        padding: 4px;
+    
+    
+    }
+    .menu .icons{
+        display: flex;
+        
+        color:blue;
+    
+    }
+        .hero-details {
+            max-width: 60%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            text-align: left; /* Alineamos todo el texto al lado izquierdo */
+        }
+ 
+/* CONTENEDOR DE OPCIONES */
+.tp-cate {
+  padding: 2rem 1rem; /* Ajuste más responsivo */
+}
+
+/* TARJETA INDIVIDUAL */
+.esp {
+  width: 100%; /* ✅ Que use el ancho de la columna bootstrap */
+  max-width: 320px; /* 🔒 Tamaño máximo para no ser demasiado grande */
+  margin: 0 auto;   /* ✅ Centrada horizontalmente */
+  height: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f4f4f4;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.esp:hover {
+  background-color: rgb(121, 190, 255);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.esp img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.esp p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.esp .h4 {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.esp:hover .h4 {
+  background-color: black;
+}
+
+
+        /*Iconos de informacion*/
+        .ico {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que los elementos bajen si no caben en una línea */
+            gap: 180px; /* Espacio entre elementos */
+
+        }
+        
+        .icons1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .ico p{
+            font-size: 1.3rem;
+        }
+        
+        .ciencia {
+            background-color: #e4ba00;
+            width: 150px; /* Tamaño fijo */
+            height: 150px; /* Tamaño fijo */
+            border: 5px solid #e3a24d; /* Borde más delgado */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Evita que las imágenes sobresalgan */
+        }
+        
+        .ciencia img, .salud img, .social img , .artes img,
+        .tic img, .enci img, .entre img {
+            width: 70%; /* Tamaño relativo al contenedor */
+            height: auto; /* Mantiene la proporción */
+        }
+
+        .salud {
+            background-color: #a2f75c;
+            width: 150px; /* Tamaño fijo */
+            height: 150px; /* Tamaño fijo */
+            border: 5px solid #296504; /* Borde más delgado */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Evita que las imágenes sobresalgan */
+        }
+        .social {
+            background-color: #fc70c4;
+            width: 150px; /* Tamaño fijo */
+            height: 150px; /* Tamaño fijo */
+            border: 5px solid #e34da9; /* Borde más delgado */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Evita que las imágenes sobresalgan */
+        }
+
+        .artes {
+            background-color: #9159fa;
+            width: 150px; /* Tamaño fijo */
+            height: 150px; /* Tamaño fijo */
+            border: 5px solid #160b48; /* Borde más delgado */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Evita que las imágenes sobresalgan */
+        }
+        .tic {
+            background-color: #008de4;
+            width: 150px; /* Tamaño fijo */
+            height: 150px; /* Tamaño fijo */
+            border: 5px solid #4d5ce3; /* Borde más delgado */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Evita que las imágenes sobresalgan */
+        }
+
+        .enci{
+            background-color: #e48100;
+            width: 150px; /* Tamaño fijo */
+            height: 150px; /* Tamaño fijo */
+            border: 5px solid #d84303; /* Borde más delgado */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Evita que las imágenes sobresalgan */
+        }
+
+        .entre{
+            background-color: #f01b1b;
+            width: 150px; /* Tamaño fijo */
+            height: 150px; /* Tamaño fijo */
+            border: 5px solid #e34d4d; /* Borde más delgado */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Evita que las imágenes sobresalgan */
+        }
+
+        .ciencia:hover, .salud:hover, .social:hover , .artes:hover,
+        .tic:hover, .enci:hover, .entre:hover {
+            background-color: #fefffe;
+            border: 5px solid #989898; 
+        }
+
+
+/* Mi cuenta */
+.cuenta {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none; /* controlado por JavaScript */
+}
+
+.inf {
+  background-color: #4285f4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: block;
+  border: 4px solid #ddd;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h2 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.info p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.info span {
+  font-weight: bold;
+  color: #333;
+}
+
+.button-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #357ae8;
+}
+
+  
+/*CHATBOOT*/
+/* Estilo del botón de chat */
+.chat {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .chat:hover {
+    transform: scale(1.1);
+  }
+  
+  .chat img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Contenedor del cuadro de chat */
+  .chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    width: 340px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    z-index: 1000;
+    animation: slideUp 0.3s ease-in-out;
+  }
+  
+  /* Animación para aparecer */
+  @keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  /* Cabecera del chat */
+  .chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .chat-header .close-btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Cuerpo del chat */
+  .chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto; /* Habilitar el desplazamiento vertical */
+    height: 100%;
+    max-height: 300px; /* Altura máxima para el cuerpo del chat */
+    scrollbar-width: thin; /* Opcional: Estilo para navegadores compatibles */
+    scrollbar-color: #007bff #f1f1f1; /* Opcional: Colores del desplazador */
+  }
+  
+  /* Mensajes del chat */
+  .message {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 75%;
+  }
+  
+  .received {
+    background-color: #e9ecef;
+    align-self: flex-start;
+  }
+  
+  .sent {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  /* Pie del chat */
+  .chat-footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+  }
+  
+  .chat-footer input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .chat-footer .send-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+.footer {
+  background: var(--fondo);
+  color: black;
+  margin-top: auto; /* Aquí es donde ocurre la "magia" */
+}   
+.wrapper {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+  
+        
